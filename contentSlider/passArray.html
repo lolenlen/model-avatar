@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pass Array Elements One by One</title>
+</head>
+<body>
+    <div>
+        <button id="nextButton">Next Element</button>
+        <div id="output"></div>
+    </div>
+
+    <script >
+    const arrayToPass = [1, 2, 3, 4, 5];
+      let currentIndex = 0;
+      
+      const outputDiv = document.getElementById('output');
+      const nextButton = document.getElementById('nextButton');
+      
+      function displayNextElement() {
+          if (currentIndex < arrayToPass.length) {
+              const currentElement = arrayToPass[currentIndex];
+              outputDiv.textContent = currentElement;
+              currentIndex++;
+          } else {
+              outputDiv.textContent = 'End of the array';
+          }
+      }
+      
+      nextButton.addEventListener('click', displayNextElement);
+      </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title> Project Mannequin </title>
+  <link rel="stylesheet" href="model-project.css">
+
+</head>
+
+<body class="body">
+  
+  <div class="content-page">
+
+    <div class="c-title"> Project Dummy </div>
+
+    <div class="c-name">
+      <input class="c-inputName" type="text" placeholder="Name">
+    </div>
+    
+    <div class="c-dressUp">
+
+      <div class="c-leftDressUp">
+        
+        <button class="cssLeftButton leftButton">
+          <img class="arrow" src="arrow-button/leftArrow.png"
+               onclick="UpdateHeadLeftElement()">
+        </button>
+
+        <div>
+          <button class="cssLeftButton leftButton ">
+            <img class="arrow" src="arrow-button/leftArrow.png"
+            onclick="UpdateTorsoLeftElement()">
+          </button>
+  
+          <button class="cssLeftButton leftButton">
+            <img class="arrow" src="arrow-button/leftArrow.png"
+            >
+          </button>
+        </div>
+
+        <button class="cssLeftButton leftButton">
+          <img class="arrow" src="arrow-button/leftArrow.png"
+          onclick="UpdateLegsLeftElement()">
+        </button>
+
+        <button class="cssLeftButton cssArrowBottomFoot leftButton">
+          <img class="arrow" src="arrow-button/leftArrow.png"
+          onclick="UpdateFeetLeftElement()">
+        </button>
+
+      </div>
+
+      <div class="c-centerDressUp ">
+
+        <p class="head js-head js-renderHead">
+          <img class="headImage" src="pseudo-model/blueSquare.png">
+        </p>
+
+        <p class="torso js-torso js-renderTorso">
+          <img class="torsoImage" src="pseudo-model/blueSquare.png">
+        </p>
+
+        <p class="jacket js-jacket js-renderJacket">
+          <img class="jacketImage" src="pseudo-model/Greensquare.png">
+        </p>
+
+        <p class="legs js-legs js-renderLegs">
+          <img class="legsImage" src="pseudo-model/blueSquare.png">
+        </p>
+
+        <p class="foot js-foot js-renderFeet">
+          <img class="footImage" src="pseudo-model/blueSquare.png">
+        </p>
+
+      </div>
+
+      <div class="c-rightDressUp">
+
+        <button class="cssRightButton js-headRightButton"
+                onclick="UpdateHeadRightElement()">
+          <img class="arrow" src="arrow-button/rightArrow.png">
+        </button>
+
+        <div>
+          <button class="cssRightButton"
+                  onclick="UpdateJacketRightElement()">
+            <img class="arrow" src="arrow-button/rightArrow.png">
+          </button>
+  
+          <button class="cssRightButton">
+            <img class="arrow" src="arrow-button/rightArrow.png"
+            onclick="UpdateTorsoRightElement()">
+          </button>
+        </div>
+
+        <button class="cssRightButton cssArrowBottomLegs">
+          <img class="arrow" src="arrow-button/rightArrow.png"
+          onclick="UpdateLegsRightElement()">
+        </button>
+
+        <button class="cssArrowBottomFoot">
+          <img class="arrow" src="arrow-button/rightArrow.png"
+          onclick="UpdateFeetRightElement()">
+        </button>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="model-project.js">
+
+  </script>
+</body>
+
+</html>

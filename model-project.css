@@ -1,0 +1,156 @@
+.body {
+  background-image: url(model-project-background/h.png);
+  background-repeat: repeat;
+  height: 1200px;
+}
+
+.content-page {
+  background-image: url(model-project-background/g.png);
+  position: fixed;
+  max-width:1500px;
+  top: 0px;
+  bottom: 0px;
+  left: 300px;
+  right: 300px;
+}
+
+@font-face {
+  font-family: 'Blackletter';
+  src: url(model-project-fonts/BlackletterExtrabold-51DV.ttf);
+}
+
+.c-title {
+  font-family: 'Blackletter', sans-serif;
+  color: white;
+  font-size: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-inputName {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: transparent;
+  border-width: 0px 0px 1px 0px;
+  font-size: 40px;
+  color: mintcream;
+  width: 200px;
+  display: flex;
+  outline: none;
+  text-align: center;
+}
+
+.c-inputName::placeholder {
+  text-align: center;
+  color: mintcream;
+  font-size: 30px;
+}
+
+
+
+.c-leftDressUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 600px;
+  margin-top: 50px;
+}
+
+.c-centerDressUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  right: 800px;
+  left: 800px;
+}
+
+
+.c-rightDressUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  right: 600px;
+  margin-top: 50px;
+}
+
+
+
+.cssRightButton, .cssLeftButton {
+  background-color: transparent;
+  border-width: 0px;
+  margin: 0px 0px 100px 0px;
+  cursor: pointer;
+ }
+
+ .cssArrowBottomFoot {
+  background-color: transparent;
+  border-width: 0px;
+  margin: 50px 0px 0px 0px;
+  cursor: pointer;
+}
+
+ .leftButton {
+  cursor: pointer;
+ }
+
+.cssLeftButton:active {
+ opacity: 0.8;
+}
+
+.cssRightButton:active {
+  opacity: 0.8;
+ }
+ 
+
+.arrow {
+  width: 100px;
+  margin: 10px 0px 10px 0px;
+  cursor: pointer;
+}
+
+.head, .torso, .legs, .foot, .jacket {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.jacket {
+  display: flex;
+  position: relative;
+  top: -180px;
+  z-index: -1;
+  margin-bottom: -180px;
+}
+
+.headImage {
+  width: 100px;
+  
+}
+
+.torsoImage {
+  width: 150px;
+  
+}
+
+.jacketImage {
+  width: 175px;
+  height: 200px;
+  
+}
+
+.legsImage {
+  width: 100px;
+  height: 200px;
+}
+
+.footImage {
+  width: 80px;
+}
